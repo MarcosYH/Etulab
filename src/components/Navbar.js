@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -78,37 +79,37 @@ export default function Navbar() {
             >
               <ul className="flex flex-col md:p-0 font-medium md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
                 <li>
-                  <a
-                    href=" #"
+                  <Link
+                    to="/"
                     className="block py-2 pl-3 pr-4 text-black hover:bg-blue-100 md:hover:bg-transparent md:p-0 md:hover:text-blue-700"
                     aria-current="page"
                   >
                     Accueil
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href=" #"
+                  <Link
+                    to="/solution"
                     className="block py-2 pl-3 pr-4 text-black hover:bg-blue-100 md:hover:bg-transparent md:p-0 md:hover:text-blue-700"
                   >
                     solution
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href=" #"
+                  <Link
+                    to="/blog"
                     className="block py-2 pl-3 pr-4 text-black hover:bg-blue-100 md:hover:bg-transparent md:p-0 md:hover:text-blue-700"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href=" #"
+                  <Link
+                    to="/contact"
                     className="block py-2 pl-3 pr-4 text-black hover:bg-blue-100 md:hover:bg-transparent md:p-0 md:hover:text-blue-700"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
