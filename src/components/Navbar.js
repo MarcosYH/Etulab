@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div>
       <div>
-        <nav className="bg-white fixed w-full top-0 border-b shadow border-gray-200">
+        <nav className="bg-white fixed w-full top-0 border-b shadow border-gray-200 z-20">
           <div className="flex flex-wrap items-center justify-between p-4 sm:mx-auto max-w-screen-xl">
             {/* Logo-Etulab */}
             <a href=" #">
