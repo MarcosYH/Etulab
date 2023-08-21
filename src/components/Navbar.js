@@ -16,20 +16,20 @@ export default function Navbar() {
             {/* boutton-auth&responsive */}
             <div className="flex md:order-2">
               {/* auth-button */}
-              <a
-                href=" #"
+              <Link
+                to="/login"
                 type="button"
                 className="text-black hover:text-[#2546BE] font-medium rounded-lg px-3 py-2 text-center mr-3 border border-[#2546BE]"
               >
                 Connexion
-              </a>
-              <a
-                href=" #"
+              </Link>
+              <Link
+                to="/register"
                 type="button"
                 className="text-white rounded-lg px-3 py-2 text-center mr-3 md:mr-0 bg-[#2546BE] hover:bg-blue-900"
               >
                 S'inscrire
-              </a>
+              </Link>
               {/* toggle-button */}
               <button
                 data-collapse-toggle="navbar-element"
