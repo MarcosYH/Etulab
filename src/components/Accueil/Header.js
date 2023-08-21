@@ -5,7 +5,7 @@ import SecureAnimation from "./SecureAnimation";
 export default function Header() {
   return (
     <>
-    <div className="bg-[#F2F4FE]">
+    <div className="">
       <div className="flex flex-wrap items-center justify-between p-4 sm:mx-auto max-w-screen-xl mt-24 ">
         <div className="h-[30rem] ">
           <div className=" md:w-1/2 p-4 title_header relative z-10 ">
