@@ -1,7 +1,7 @@
 import React from "react";
-import iconService_1 from "../../assets/iconService_1.png";
-import iconService_2 from "../../assets/iconService_2.png";
-import iconService_3 from "../../assets/iconService_3.png";
+import iconService_1 from "../../assets/icon_service/iconService_1.png";
+import iconService_2 from "../../assets/icon_service/iconService_2.png";
+import iconService_3 from "../../assets/icon_service/iconService_3.png";
 export default function Service() {
   return (
     <div>
