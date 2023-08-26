@@ -47,12 +47,10 @@ export default function Footer() {
               <h3 className="text-lg font-bold">Entreprise</h3>
 
               <p className=" ">
-                <div className="">
                   <a href=" #">Info</a>
                   <br />
                   <a href=" #">Lignes directrices de la marque</a> <br />
                   <a href=" #">Support</a>
-                </div>
               </p>
             </div>
           </div>
