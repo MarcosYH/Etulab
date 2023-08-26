@@ -60,3 +60,4 @@ input:not(:placeholder-shown) {
 input:valid {
   border-color: green;
 }
+
