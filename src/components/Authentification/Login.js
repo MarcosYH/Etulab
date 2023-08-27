@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import imgLogin from "../../assets/img_login.png";
+import imgLogin from "../../assets/image_auth.png";
 import { Link } from "react-router-dom";
-import "../../styles/styles.css";
+import "../../styles/Login.css";
 import Navbar from "../Navbar";
 
 function Login() {
@@ -16,9 +16,9 @@ function Login() {
   return (
     <>
     <Navbar/>
-      <div className="flex flex-col md:flex-row flex-wrap items-center justify-between p-4 sm:mx-auto max-w-screen-xl mt-44">
+      <div className="flex flex-col md:flex-row flex-wrap items-center justify-between p-4 sm:mx-auto max-w-screen-xl mt-44 lg:mt-10">
 
-        <div className="md:w-1/2 md:p-16">
+        <div className="md:w-1/2 w-full ">
         <h1 className=" text-4xl font-bold text-center mb-5">Connexion</h1>
           {/* Formulaire de login */}
           {/* onSubmit={(e) => handleSubmit(e)} */}
@@ -115,7 +115,7 @@ function Login() {
             Vous n'avez pas de compte ?
             <Link
               to="/register"
-              className=" mx-2 text-red-600 hover:underline hover:underline-offset-4"
+              className=" mx-2 text-[#4299E1] hover:underline hover:underline-offset-4"
             >
              Inscrivez-vous
             </Link>

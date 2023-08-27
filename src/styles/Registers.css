@@ -1,0 +1,8 @@
+.imgre{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+input:valid {
+    border-color: #d1d5db;
+  }

@@ -47,17 +47,5 @@
   z-index: 1;
 }
 
-/* Login */
-input:not(:placeholder-shown) {
-  border-color: red;
-}
-
-/* Afficher les bordures rouges lorsqu'elles sont remplies, mais non valides */
-input:not(:placeholder-shown) {
-  border-color: hsl(0, 76%, 50%);;
-}
-/* Afficher les bordures vertes lorsqu'elles sont valides */
-input:valid {
-  border-color: green;
-}
+ 
 

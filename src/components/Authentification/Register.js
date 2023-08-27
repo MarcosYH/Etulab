@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import img_register from "../../assets/img_register.png";
+import img_register from "../../assets/image_auth.png";
+import "../../styles/Registers.css";
 import Navbar from "../Navbar";
  
 
@@ -29,7 +30,7 @@ function Registers() {
             {/* onSubmit={(e) => handleSubmit(e)} */}
             <form>
               <h1 className="text-3xl text-center font-bold text-black">
-                {"S'inscrire"}
+              Rejoignez-nous !
               </h1>
               {/* Name */}
               <div>

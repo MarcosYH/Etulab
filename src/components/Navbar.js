@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/Logo.svg";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -93,14 +93,6 @@ export default function Navbar() {
                     className="block py-2 pl-3 pr-4 text-black hover:bg-blue-100 md:hover:bg-transparent md:p-0 md:hover:text-blue-700"
                   >
                     solution
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/blog"
-                    className="block py-2 pl-3 pr-4 text-black hover:bg-blue-100 md:hover:bg-transparent md:p-0 md:hover:text-blue-700"
-                  >
-                    Blog
                   </Link>
                 </li>
                 <li>

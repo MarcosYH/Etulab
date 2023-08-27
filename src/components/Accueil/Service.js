@@ -38,8 +38,7 @@ export default function Service() {
             />
             </div>
             <span className="text-2xl font-medium text-[#2B3377] ">
-              Faires des testes sur des environnements de développement réels et
-              transparents
+              Faires des testes sur des environnements virtuels
             </span>
             <p className=" my-4 text-lg">
               Les laboratoires se déroulent dans de véritables environnements de
@@ -55,7 +54,7 @@ export default function Service() {
               className="img-fluid my-4"
             />
             </div>
-            <span className="text-2xl font-medium text-[#2B3377]">Pas de quiz sur le codage sécurisé</span>
+            <span className="text-2xl font-medium text-[#2B3377]">Pas de quiz sur le codage sécurisé mais plutôt la pratique</span>
             <p className=" my-4 text-lg">
               Les questionnaires, les diapositives et les vidéos sont inadéquats
               - c'est pourquoi des vulnérabilités vieilles de 20 ans existent

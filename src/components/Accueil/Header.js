@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/styles.css";
 import SecureAnimation from "../SecureAnimation"
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -18,13 +19,13 @@ export default function Header() {
             </h1>
             <div className=" border bg-[#34A853] rounded-xl py-1 w-16 mb-4"></div>
             <p className="text-gray-600 text-2xl mr-16 mb-5">Apprendre, appliquer et tester vos connaissances en sécurité.</p>
-            <a
-                href=" #"
+            <Link
+                to="/Login"
                 type="button"
                 className="text-white rounded-lg px-3 py-2 text-center mr-3 md:mr-0 bg-[#2546BE] hover:bg-blue-900"
               >
                Commencer
-              </a>
+              </Link>
           </div>
           <div className="fond_header hidden md:block">
             <SecureAnimation />

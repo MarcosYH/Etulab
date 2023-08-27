@@ -38,7 +38,7 @@ export default function Solution() {
                 <div className=" w-full justify-center flex">
                 <img src={data_security} alt="data_security" />
                 </div>
-                <h4 className=" text-[#1B71FF] text-2xl my-4">Data security</h4>
+                <h4 className=" text-[#1B71FF] text-2xl my-4">Sécurité des données</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Tortor id aliquam dignissim risus diam dictum. A lectus in
@@ -50,7 +50,7 @@ export default function Solution() {
                 <div className="w-full justify-center flex">
                 <img src={folder_security} alt="folder_security" />
                 </div>
-                <h4 className=" text-[#1B71FF] text-2xl my-4">file Security</h4>
+                <h4 className=" text-[#1B71FF] text-2xl my-4">Sécurité des fichiers</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Tortor id aliquam dignissim risus diam dictum. A lectus in
@@ -64,7 +64,7 @@ export default function Solution() {
                 <div className="w-full justify-center flex">
                 <img src={server_security} alt="server_security" />
                 </div>
-                <h4 className=" text-[#1B71FF] text-2xl my-4">Database security</h4>
+                <h4 className=" text-[#1B71FF] text-2xl my-4">Sécurité des bases de données</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Tortor id aliquam dignissim risus diam dictum. A lectus in
@@ -76,7 +76,7 @@ export default function Solution() {
                 <div className="w-full justify-center flex">
                 <img src={shield_security} alt="shield_security" />
                 </div>
-                <h4 className=" text-[#1B71FF] text-2xl my-4">Cloud security</h4>
+                <h4 className=" text-[#1B71FF] text-2xl my-4">Sécurité des clouds</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Tortor id aliquam dignissim risus diam dictum. A lectus in
