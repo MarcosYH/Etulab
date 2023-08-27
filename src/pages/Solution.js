@@ -18,9 +18,9 @@ export default function Solution() {
             <img src={img_solution} alt="img_solution" />
           </div>
           <div className=" w-1/2">
-            <h1 className=" text-4xl font-bold">Solution</h1>
+            <h1 className=" text-xl md:text-4xl font-bold">Solution</h1>
             <div className=" border bg-[#34A853] rounded-xl py-1 w-16 my-4"></div>
-            <p className="text-xl lg:text-3xl font-medium pr-2 ">
+            <p className=" lg:text-3xl font-medium pr-2 ">
               Chez Etulab, nous enseignons le codage sécurisé par le biais de
               laboratoires pratiques fonctionnant dans des environnements de
               développement virtualisés.
@@ -29,8 +29,8 @@ export default function Solution() {
         </div>
          
         <div>
-          <h4 className=" text-center text-4xl font-bold">Nos services</h4>
-          <h3 className=" text-center text-2xl font-bold my-4">Nous avons des services d’apprentissage intéressant </h3>
+          <h4 className=" text-center text-xl md:text-4xl font-bold">Nos services</h4>
+          <h3 className=" text-center text-lg md:text-2xl font-bold my-4">Nous avons des services d’apprentissage intéressant </h3>
           <div className="">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-center ">
               {/* service en haut */}
