@@ -100,7 +100,7 @@ function Login() {
             {/*Boutton conexion*/}
             <div className=" flex justify-center">
               <button
-                className=" my-4 bg-[#2546BE] hover:bg-blue-900 w-64 h-10 md:w-80 px-4 py-2 text-white uppercase rounded-md tracking-wider flex justify-center items-center font-bold text-sm"
+                className=" my-4 bg-[#2546BE] hover:bg-blue-900 w-full h-10 md:w-80 px-4 py-2 text-white rounded-md tracking-wider flex justify-center items-center font-bold text-sm"
                 type="submit"
                 // onClick={(e) => handleSubmit(e)}
               >
@@ -131,7 +131,7 @@ function Login() {
               <button
                 aria-label="Se connecter avec Google"
                 type="button"
-                className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400"
+                className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-blue-400"
                 // onClick={handleGoogleLogin}
               >
                 <svg

@@ -1,10 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import "../styles/Registers.css";
-import Cookies from "universal-cookie";
-const cookies = new Cookies();
+import "../../styles/Registers.css";
+import Icon_email from "../../assets/Icon_email.png";
+
 
 function Forgetpassword() {
  
@@ -29,41 +28,19 @@ function Forgetpassword() {
       }
       setLoading(true);
 
-       // Effectuer les actions nécessaires (envoi des données, etc.)
-       const configuration = {
-        method: "post",
-        url: "https://auth-api-adk2.onrender.com/forgotpassword",
-        data: {
-          email,
-        },
-      };
-      axios(configuration)
-        .then((result) => {
-          setLoading(false);
-          window.location.href = "/check_email";
-          console.log(result);
-          setEmail("");
-          setEmailError("");
-          cookies.set("EMAIL", email, { path: "/" });
-        })
-        .catch((error) => {
-          console.log(error);
-          setLoading(false);
-          if (error.response.status === 404) {
-            setEmailError("Veuillez entrer le mail relié à votre compte");
-          } 
-            });
+  
        };
   return (
     <>
       <div>
-        <div className=" h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
-          <div className="w-full px-6 py-4 mt-6 overflow-hidden sm:max-w-lg sm:rounded-lg">
+        <div className=" flex flex-col md:flex-row justify-center md:space-x-16 items-center my-2 mx-5 mt-20">
+          <div className="w-full px-6 py-4 mt-6 overflow-hidden sm:max-w-lg sm:rounded-lg order-2 md:order-1">
             {/*  Formulaire de mots de passe oublié */}
             <form onSubmit={(e) => handleSubmit(e)}>
               <h1 className="text-3xl text-center font-bold text-black">
               Mot de passe oublié?
               </h1>
+              <h3 className=" text-center my-2 text-[#8E8E8E] ">Entrez l'email associé à votre compte</h3>
               {/* Email */}
               <div className="mt-4">
                 <label
@@ -90,7 +67,7 @@ function Forgetpassword() {
               {/* button register */}
               <div className="flex items-center justify-center my-8">
                 <button
-                  className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-900 flex justify-center items-center font-bold text-sm"
+                  className="w-full px-4 py-2 tracking-wide text-white bg-[#2546BE] hover:bg-blue-900 rounded-md flex justify-center items-center font-bold text-sm"
                   onClick={(e) => handleSubmit(e)}
                 >
                  Envoyer
@@ -121,12 +98,13 @@ function Forgetpassword() {
             <div className="mt-4 text-grey-600 text-center">
               Vous avez déjà un compte ?{" "}
               <span>
-                <Link className="text-blue-600 hover:underline" to="/login">
+                <Link className=" text-[#4299E1] hover:underline hover:underline-offset-4" to="/login">
                   Se connecter
                 </Link>
               </span>
             </div>
           </div>
+          <img src= {Icon_email} alt="Icon_email" className=" order-1 md:order-2"/>
         </div>
       </div>
     </>

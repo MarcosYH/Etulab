@@ -23,8 +23,7 @@ function Registers() {
     <>
       
         <Navbar/>
-        <div className=" h-screen flex flex-col md:flex-row justify-center  md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
-          
+        <div className="flex flex-col md:flex-row justify-center items-center my-2 mx-5 mt-44 ">
           <div className="w-full px-6 py-4 mt-6 overflow-hidden sm:max-w-lg sm:rounded-lg">
             {/* Formulaire d'inscription */}
             {/* onSubmit={(e) => handleSubmit(e)} */}
@@ -141,7 +140,7 @@ function Registers() {
               {/* button register */}
               <div className="flex items-center justify-center my-8">
                 <button
-                  className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-900 flex justify-center items-center font-bold text-sm"
+                  className="w-full bg-[#2546BE] hover:bg-blue-900 px-4 py-2 tracking-wider text-white rounded-md flex justify-center items-center font-bold text-sm"
                   // onClick={(e) => handleSubmit(e)}
                 >
                   S'inscrire
@@ -155,17 +154,17 @@ function Registers() {
             <div className="mt-4 text-grey-600 text-center">
               Vous avez déjà un compte ?{" "}
               <span>
-                <Link className="text-blue-600 hover:underline" to="/login">
+                <Link className="text-[#4299E1] hover:underline hover:underline-offset-4" to="/login">
                   Se connecter
                 </Link>
               </span>
             </div>
             <div className="flex items-center w-full my-4">
               <hr className="w-full" />
-              <p className="px-3 ">où</p>
+              <p className="px-3 "> Où</p>
               <hr className="w-full" />
             </div>
-            <div className="my-6 space-y-2">
+            <div className="my-6 space-y-2 bg-[#F2FAFB] ">
               <button
                 aria-label="Se connecter avec Google"
                 type="button"
@@ -196,7 +195,7 @@ function Registers() {
                   />
                 </svg>
 
-                <p>Se connecter avec Google</p>
+                <p className=" text-[#4D9FE2]">Se connecter avec Google</p>
               </button>
             </div>
           </div>
