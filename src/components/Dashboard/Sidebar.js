@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Logo from "../../assets/Logo.svg";
 import '../../styles/Sidebar.css'
 
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
+
 export default function Sidebar() {
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -11,6 +14,13 @@ export default function Sidebar() {
 
   const closeSidebar = () => {
     setShowSidebar(false);
+  };
+
+  const logout = () => {
+    // destroy the cookie
+    cookies.remove("TOKEN", { path: "/" });
+    // redirect user to the landing page
+    window.location.href = "/";
   };
   return (
     <>
@@ -261,9 +271,12 @@ export default function Sidebar() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <a className="block px-3 text-sm " href=" #">
+              <button 
+              className="block px-3 text-sm " 
+              onClick={() => logout()}
+              >
                 Déconnexion
-              </a>
+              </button>
             </div>
           </div>
         </div>
