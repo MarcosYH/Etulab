@@ -1,0 +1,48 @@
+/**
+  * Table of Contents:
+  *
+  * 1.0 - Basic Structure
+  * 2.0 - Media Queries
+  * ----------------------------------------------------------------------------
+  */
+
+/**
+ * 1.0 Basic Structure
+ * ----------------------------------------------------------------------------
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-primary: #0a2fb6;
+  --color-secondary: #17ab13;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 400;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  color: #1a1817;
+}
+.dash_link:hover {
+  color: #ffffff;
+}
+.dash_link:hover svg path{
+    stroke:#ffffff;
+}
+
+/**
+ * 2.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+/* WordPress Media Queries */
+/* lg devices (laptop, less than 992px) */
+@media (max-width: 992px) {
+}
+
+/* Small devices (landscape phones, 576px, up to 768px) */
+@media (max-width: 768px) {
+}
