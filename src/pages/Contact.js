@@ -56,7 +56,7 @@ export default function Contact() {
                 <textarea
                   id="message"
                   rows={6}
-                  className="p-3 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 "
+                  className="p-3 w-full mb-5 text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 "
                   placeholder="Laisser un commentaire..."
                   defaultValue={""}
                 />
@@ -64,7 +64,7 @@ export default function Contact() {
               <a
                 href=" #"
                 type="submit"
-                className="text-white rounded-lg px-3 py-2 text-center mr-3 md:mr-0 bg-[#2546BE] hover:bg-blue-900"
+                className="text-white w-full rounded-lg py-3 text-center bg-[#2546BE] hover:bg-blue-900"
               >
                 Envoyer 
               </a>
