@@ -5,11 +5,12 @@ import Accueil from "./pages/Accueil";
 import Solution from "./pages/Solution";
 import Contact from "./pages/Contact";
 import Error from "./components/Error";
-import Login from "./components/Authentification/Login";
-import Registers from "./components/Authentification/Register";
+import Login from "./pages/Login";
+import Registers from "./pages/Register";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
 import Forgetpassword from "./components/Authentification/Forgetpassword";
+import Dashboard from "./pages/Dashboard";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Registers />} />
             <Route path="/forgetpassword" element={<Forgetpassword />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>
