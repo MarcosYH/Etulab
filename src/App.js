@@ -9,10 +9,12 @@ import Login from "./pages/Login";
 import Registers from "./pages/Register";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
-import Forgetpassword from "./components/Authentification/Forgetpassword";
+import Forgetpassword from "./pages/Forgetpassword";
 import Dashboard from "./pages/Dashboard";
 import { useCookies } from 'react-cookie';
 import Cookies from "universal-cookie";
+import Verify from "./pages/Verify";
+import Creatnewpassword from "./pages/Creatnewpassword";
 
 const cookies = new Cookies();
 function App() {
@@ -41,6 +43,8 @@ const [cookies] = useCookies(['TOKEN']);
             <Route path="/login"  element={cookies.TOKEN ? <Navigate to="/dashboard" /> : <Login /> }/>
             <Route path="/register" element={cookies.TOKEN ? <Navigate to="/dashboard" /> : <Registers /> } />
             <Route path="/forgetpassword" element={<Forgetpassword />} />
+            <Route path="/check_email" element={<Verify />} />
+            <Route path="/createnewpassword/:token" element={<Creatnewpassword/>} />
             <Route path="/dashboard" element={<Protecteddashboard />} />
             <Route path="*" element={<Error />} />
           </Routes>
