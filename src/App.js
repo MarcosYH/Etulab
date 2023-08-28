@@ -9,6 +9,7 @@ import Login from "./components/Authentification/Login";
 import Registers from "./components/Authentification/Register";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
+import Forgetpassword from "./components/Authentification/Forgetpassword";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Registers />} />
+            <Route path="/forgetpassword" element={<Forgetpassword />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>
