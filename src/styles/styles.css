@@ -47,5 +47,11 @@
   z-index: 1;
 }
 
- 
+/* LabTechnologies */
+.Labicon {
+  transition: transform 0.3s ease;
+}
 
+.Labicon:hover {
+  transform: scale(1.2);
+}
