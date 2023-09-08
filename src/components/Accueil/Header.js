@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
-    <div className="">
+    <div className="bg-white">
       <div className="flex flex-wrap items-center justify-between p-4 sm:mx-auto max-w-screen-xl mt-24 ">
-        <div className="h-[30rem] ">
+        <div className="h-[30rem]">
           <div className=" md:w-1/2 p-4 mb-5 title_header relative z-10 ">
             <div className=" mb-4">
             <span className=" p-2 bg-white shadow-lg border rounded-xl">👋 Bienvenue à Etulab</span>

@@ -24,25 +24,26 @@ import icon_sql from "../../assets/icon_lab/icon_sql.png";
 import icon_django from "../../assets/icon_lab/icon_django.png";
 import icon_java from "../../assets/icon_lab/icon_java.png";
 import icon_wordpress from "../../assets/icon_lab/icon_wordpress.png";
+import "../../styles/styles.css";
 export default function LabTechnologies() {
   return (
     <div>
       <div className="flex flex-wrap items-center justify-center p-4 sm:mx-auto max-w-screen-lg">
         <div className="text-center w-full ">
-          <span className=" text-3xl text-center">Lab Technologies</span>
+          <span className=" text-3xl text-center font-bold ">Lab Technologies</span>
         </div>
         <div className="flex flex-col md:flex-row">
           <div className=" p-4 md:w-1/4">
             <div className="flex justify-center">
               <div className="w-1/2 m-2  ">
                 <a href=" #">
-                  <img src={icon_js} alt="icon_js" className="  mb-3" />
+                  <img src={icon_js} alt="icon_js" className="Labicon  mb-3" />
                 </a>
                 <a href=" #">
-                  <img src={icon_ts} alt="icon_ts" className=" mb-3" />
+                  <img src={icon_ts} alt="icon_ts" className="Labicon mb-3" />
                 </a>
                 <a href=" #">
-                  <img src={icon_php} alt="icon_php" className=" " />
+                  <img src={icon_php} alt="icon_php" className="Labicon " />
                 </a>
               </div>
 
@@ -51,17 +52,17 @@ export default function LabTechnologies() {
                   <img
                     src={icon_angular}
                     alt="icon_angular"
-                    className="  mb-3"
+                    className="Labicon  mb-3"
                   />
                 </a>
                 <a href=" #">
-                  <img src={icon_vuejs} alt="icon_vuejs" className=" mb-3" />
+                  <img src={icon_vuejs} alt="icon_vuejs" className="Labicon mb-3" />
                 </a>
                 <a href=" #">
                   <img
                     src={icon_docker}
                     alt="icon_docker"
-                    className="md:w-96 mb-3"
+                    className="md:w-96 mb-3 Labicon"
                   />
                 </a>
               </div>
@@ -74,30 +75,30 @@ export default function LabTechnologies() {
                   <img
                     src={icon_reactjs}
                     alt="icon_reactjs"
-                    className="  mb-3"
+                    className="Labicon  mb-3"
                   />
                 </a>
                 <a href=" #">
-                  <img src={icon_nodejs} alt="icon_nodejs" className="  mb-3" />
+                  <img src={icon_nodejs} alt="icon_nodejs" className="Labicon  mb-3" />
                 </a>
                 <a href=" #">
-                  <img src={icon_flutter} alt="icon_flutter" className=" " />
+                  <img src={icon_flutter} alt="icon_flutter" className="Labicon " />
                 </a>
               </div>
 
-              <div className="w-1/2 m-2">
+              <div className="w-1/2 m-2 ">
                 <a href=" #">
-                  <img src={icon_nextjs} alt="icon_nextjs" className=" mb-3" />
+                  <img src={icon_nextjs} alt="icon_nextjs" className="Labicon mb-3" />
                 </a>
                 <a href=" #">
                   <img
                     src={icon_mongodb}
                     alt="icon_mongodb"
-                    className="  mb-3"
+                    className="Labicon ml-4  mb-3"
                   />
                 </a>
                 <a href=" #">
-                  <img src={icon_andoid} alt="icon_andoid" className=" mb-3" />
+                  <img src={icon_andoid} alt="icon_andoid" className="Labicon mb-3" />
                 </a>
               </div>
             </div>
@@ -109,30 +110,30 @@ export default function LabTechnologies() {
                   <img
                     src={icon_taillwind}
                     alt="icon_taillwind"
-                    className="  mb-3"
+                    className="Labicon  mb-3"
                   />
                 </a>
                 <a href=" #">
                   <img
                     src={icon_firebase}
                     alt="icon_firebase"
-                    className="  mb-3"
+                    className="Labicon  mb-3"
                   />
                 </a>
                 <a href=" #">
-                  <img src={icon_c} alt="icon_c" className=" " />
+                  <img src={icon_c} alt="icon_c" className="Labicon " />
                 </a>
               </div>
 
               <div className="w-1/2 m-2">
                 <a href=" #">
-                  <img src={icon_html3} alt="icon_html3" className=" mb-3" />
+                  <img src={icon_html3} alt="icon_html3" className="Labicon mb-3" />
                 </a>
                 <a href=" #">
-                  <img src={icon_c2} alt="icon_c2" className="  mb-3" />
+                  <img src={icon_c2} alt="icon_c2" className="Labicon  mb-3" />
                 </a>
                 <a href=" #">
-                  <img src={icon_aws} alt="icon_aws" className="  mb-3" />
+                  <img src={icon_aws} alt="icon_aws" className="Labicon  mb-3" />
                 </a>
               </div>
             </div>
@@ -141,28 +142,28 @@ export default function LabTechnologies() {
             <div className="flex justify-center ">
               <div className="w-1/2 m-2  ">
                 <a href=" #">
-                  <img src={icon_html5} alt="icon_html5" className="  mb-3" />
+                  <img src={icon_html5} alt="icon_html5" className="Labicon  mb-3" />
                 </a>
                 <a href=" #">
-                  <img src={icon_rubi} alt="icon_rubi" className="  mb-3" />
+                  <img src={icon_rubi} alt="icon_rubi" className="Labicon  mb-3" />
                 </a>
                 <a href=" #">
-                  <img src={icon_sql} alt="icon_sql" className=" " />
+                  <img src={icon_sql} alt="icon_sql" className="Labicon " />
                 </a>
               </div>
 
               <div className="w-1/2 m-2">
                 <a href=" #">
-                  <img src={icon_django} alt="icon_django" className=" mb-3" />
+                  <img src={icon_django} alt="icon_django" className="Labicon mb-3" />
                 </a>
                 <a href=" #">
-                  <img src={icon_java} alt="icon_java" className="  mb-3" />
+                  <img src={icon_java} alt="icon_java" className="Labicon  mb-3" />
                 </a>
                 <a href=" #">
                   <img
                     src={icon_wordpress}
                     alt="icon_wordpress"
-                    className="  mb-3"
+                    className="Labicon  mb-3"
                   />
                 </a>
               </div>
