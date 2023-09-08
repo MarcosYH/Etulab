@@ -10,11 +10,17 @@ import Registers from "./pages/Register";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
 import Forgetpassword from "./pages/Forgetpassword";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dash_Etudiant/Dashboard";
 import { useCookies } from 'react-cookie';
 import Cookies from "universal-cookie";
 import Verify from "./pages/Verify";
 import Creatnewpassword from "./pages/Creatnewpassword";
+import Laboratoires from "./pages/Dash_Etudiant/Laboratoires";
+import Learnpath from "./pages/Dash_Etudiant/Learnpath";
+import Courses from "./pages/Dash_Etudiant/Courses";
+import Achievements from "./pages/Dash_Etudiant/Achievements";
+import Settings from "./pages/Dash_Etudiant/Settings";
+import Help from "./pages/Dash_Etudiant/Help";
 
 const cookies = new Cookies();
 function App() {
@@ -46,18 +52,23 @@ const [cookies] = useCookies(['TOKEN']);
             <Route path="/check_email" element={<Verify />} />
             <Route path="/createnewpassword/:token" element={<Creatnewpassword/>} />
             <Route path="/dashboard" element={<Protecteddashboard />} />
+            <Route path="/labtech" element={<Laboratoires />} />
+            <Route path="/learnpath" element={<Learnpath />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/achievements" element={<Achievements />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/help" element={<Help />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>
       )}
     </div>
   );
-};
+}
 
 // function for protect route dashboard
 const Protecteddashboard = () => {
   const isAuthenticated = cookies.get("TOKEN");
-
   return isAuthenticated ? <Dashboard /> : <Navigate to="/" />;
 };
 
